@@ -62,7 +62,7 @@ public class MainActivity extends Activity implements RecodeAudioDataListener, O
 					while (isPlay) {
 						length = in_far.read(data, 0, data.length);
 						if (length == data.length) {
-//							Thread.sleep(70);
+							// Thread.sleep(70); // Set the sleep to 70ms
 							frame.setAudioData(data, length);
 							frame.setTimeStamp(System.currentTimeMillis());
 							Log.i("TAG", "time:"+System.currentTimeMillis());
